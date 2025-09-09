@@ -58,16 +58,14 @@ const SectionBadge = ({ children }: { children: ReactNode }) => {
   }, [mouseX, mouseY]);
 
   return (
-    <div className="w-full flex justify-center mb-32">
-      <motion.div
-        ref={ref}
-        style={{ background }}
-        className="inline-flex items-center gap-2 cursor-cell rounded-full px-4 py-1.5 text-lime-400 border border-lime-400 relative overflow-hidden"
-      >
-        <span className="relative z-10">✶</span>
-        <span className="relative z-10">{children}</span>
-      </motion.div>
-    </div>
+    <motion.div
+      ref={ref}
+      style={{ background }}
+      className="inline-flex w-max items-center gap-2 cursor-cell rounded-full px-4 py-1.5 text-lime-400 border border-lime-400 relative overflow-hidden"
+    >
+      <span className="relative z-10">✶</span>
+      <span className="relative z-10 uppercase">{children}</span>
+    </motion.div>
   );
 };
 
