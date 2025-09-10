@@ -29,7 +29,7 @@ const CTA = () => {
   }, [scope, animate]);
 
   return (
-    <section className="mt-32">
+    <section className="my-32">
       <div className="overflow-x-clip p-4 flex ">
         <motion.div
           ref={scope}

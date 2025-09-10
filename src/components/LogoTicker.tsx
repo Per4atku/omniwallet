@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useRef, useEffect, useState, Fragment } from "react";
 
 import acmecorp from "@/assets/images/acme-corp.svg";
 import apex from "@/assets/images/apex.svg";
@@ -11,7 +13,6 @@ import echovalley from "@/assets/images/echo-valley.svg";
 import quantum from "@/assets/images/quantum.svg";
 import celestial from "@/assets/images/celestial.svg";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { motion } from "framer-motion";
 
 const logos = [
   { name: "Acme Corp", src: acmecorp },
@@ -25,43 +26,41 @@ const logos = [
 ];
 
 const LogoTicker = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      setWidth(containerRef.current.scrollWidth / 2); // half, because we duplicate logos
+    }
+  }, []);
+
   return (
-    <section className=" py-4  mt-32">
+    <section className="py-4 mt-32">
       <MaxWidthWrapper maxWidth={800}>
         <p className="text-muted-foreground text-xl font-medium mb-12 text-center px-2">
           Already chosen by these market leaders
         </p>
       </MaxWidthWrapper>
-      <div className="flex overflow-hidden logo-ticker-mask gap-12">
-        <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="flex gap-12 flex-shrink-0"
-        >
-          {logos.map((logo) => (
-            <Image
-              key={logo.name}
-              src={logo.src}
-              alt={logo.name}
-              className="h-12 w-auto"
-            />
-          ))}
-        </motion.div>
 
+      <div className="overflow-hidden flex logo-ticker-mask">
         <motion.div
-          initial={{ x: 0 }}
-          animate={{ x: "-100%" }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="flex gap-12 flex-shrink-0"
+          ref={containerRef}
+          className="flex flex-none gap-12 pr-12"
+          animate={{ x: "-50%" }}
+          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
         >
-          {logos.map((logo) => (
-            <Image
-              key={logo.name + "-copy"}
-              src={logo.src}
-              alt={logo.name}
-              className="h-12 w-auto"
-            />
+          {Array.from({ length: 2 }).map((_, i) => (
+            <Fragment key={i}>
+              {logos.map((logo) => (
+                <Image
+                  key={logo.name}
+                  src={logo.src}
+                  alt={logo.name}
+                  className="h-12 w-auto"
+                />
+              ))}
+            </Fragment>
           ))}
         </motion.div>
       </div>
