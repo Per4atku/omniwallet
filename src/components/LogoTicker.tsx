@@ -36,7 +36,7 @@ const LogoTicker = () => {
         <motion.div
           initial={{ x: 0 }}
           animate={{ x: "-100%" }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           className="flex gap-12 flex-shrink-0"
         >
           {logos.map((logo) => (
