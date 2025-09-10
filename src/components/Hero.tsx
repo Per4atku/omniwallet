@@ -6,6 +6,7 @@ import { Input } from "./ui/input";
 const Hero = () => {
   return (
     <MaxWidthWrapper
+      id="home"
       maxWidth={800}
       className="flex flex-col container mx-auto mt-20 text-center items-center gap-4 md:gap-6 lg:gap-8"
     >

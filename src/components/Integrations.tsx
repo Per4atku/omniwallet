@@ -44,7 +44,10 @@ export type integrationsType = typeof integrations;
 
 export default function Integrations() {
   return (
-    <section className="mt-32 flex flex-col lg:flex-row gap-8 lg:items-center">
+    <section
+      id="intergrations"
+      className="mt-32 flex flex-col lg:flex-row gap-8 lg:items-center"
+    >
       <div className="flex flex-col gap-8 max-w-[500px]">
         <SectionBadge>Integrations</SectionBadge>
         <h1 className="text-6xl font-medium lg:text-7xl">

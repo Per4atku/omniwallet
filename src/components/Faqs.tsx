@@ -36,7 +36,7 @@ const faqs = [
 
 export default function Faqs() {
   return (
-    <section className="flex flex-col gap-8 items-center mt-32">
+    <section id="faq" className="flex flex-col gap-8 items-center mt-32">
       <SectionBadge>FAQs</SectionBadge>
       <h1 className="text-6xl text-center font-medium lg:text-7xl">
         Questions? We've <br /> got{" "}
