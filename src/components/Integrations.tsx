@@ -1,42 +1,44 @@
-import figmaIcon from "../assets/images/figma-logo.svg";
-import notionIcon from "../assets/images/notion-logo.svg";
-import slackIcon from "../assets/images/slack-logo.svg";
-import relumeIcon from "../assets/images/relume-logo.svg";
-import framerIcon from "../assets/images/framer-logo.svg";
-import githubIcon from "../assets/images/github-logo.svg";
+import bitcoin from "../assets/images/btc.png";
+import usd from "../assets/images/usd.png";
+import tsl from "../assets/images/tsl.png";
+import slv from "../assets/images/slv.png";
+import oil from "../assets/images/oil.png";
+import eth from "../assets/images/eth.png";
 import SectionBadge from "./SectionBadge";
 import IntegrationColumn from "./IntergrationsColumn";
 
 const integrations = [
   {
-    name: "Figma",
-    icon: figmaIcon,
-    description: "Figma is a collaborative interface design tool.",
+    name: "Bitcon",
+    icon: bitcoin,
+    description: "The first cryptocurrency ever.",
   },
   {
-    name: "Notion",
-    icon: notionIcon,
-    description: "Notion is an all-in-one workspace for notes and docs.",
+    name: "USD",
+    icon: usd,
+    description: "Used in ~88% of all forex trades.",
   },
   {
-    name: "Slack",
-    icon: slackIcon,
-    description: "Slack is a powerful team communication platform.",
+    name: "Tesla Stock",
+    icon: tsl,
+    description: "Often seen as a symbol of innovation and volatility.",
   },
   {
-    name: "Relume",
-    icon: relumeIcon,
-    description: "Relume is a no-code website builder and design system.",
+    name: "Silver (XAG)",
+    icon: slv,
+    description:
+      "Historically called “the people’s money” due to its affordability vs. gold.",
   },
   {
-    name: "Framer",
-    icon: framerIcon,
-    description: "Framer is a professional website prototyping tool.",
+    name: "Oil (WTI/Brent)",
+    icon: oil,
+    description:
+      "Crude oil prices influence global inflation more than almost any other commodity.",
   },
   {
-    name: "GitHub",
-    icon: githubIcon,
-    description: "GitHub is the leading platform for code collaboration.",
+    name: "Etherium",
+    icon: eth,
+    description: "Introduced smart contracts in 2015",
   },
 ];
 
@@ -49,13 +51,13 @@ export default function Integrations() {
       className="mt-32 flex flex-col lg:flex-row gap-8 lg:items-center"
     >
       <div className="flex flex-col gap-8 max-w-[500px]">
-        <SectionBadge>Integrations</SectionBadge>
+        <SectionBadge>Assets</SectionBadge>
         <h1 className="text-6xl font-medium lg:text-7xl">
-          Plays well with <span className="text-lime-400 ">others</span>
+          All assets,
+          <span className="text-lime-400 ">one wallet.</span>
         </h1>
         <p className="text-muted-foreground text-lg">
-          Layers seamlessly connects with your favorite tools, making it easy to
-          plug into any workflow and collaborate across platforms.
+          From crypto to commodities to cash — manage everything in one place.
         </p>
       </div>
 

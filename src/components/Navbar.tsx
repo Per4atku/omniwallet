@@ -24,9 +24,9 @@ const Navbar = () => {
     <section className="py-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-2 border border-white/15 rounded-full p-2 px-4 items-center lg:grid-cols-3">
-          <div className="flex">
-            <Image src={logo} alt="Logo" className="h-9 w-auto " />
-          </div>
+          <Link href="/" className="flex">
+            <Image src={logo} alt="Logo" className="h-18 w-auto " />
+          </Link>
           <div className="hidden lg:flex w-full justify-between">
             {navlinks.map((link) => (
               <Link

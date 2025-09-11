@@ -1,36 +1,41 @@
+import SectionBadge from "./SectionBadge";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-import SectionBadge from "./SectionBadge";
 
 const faqs = [
   {
-    question: "How is Layers different from other design tools?",
+    question: "What makes The OmniWallet unique?",
     answer:
-      "Unlike traditional design tools, Layers prioritizes speed and simplicity without sacrificing power. Our intelligent interface adapts to your workflow, reducing clicks and keeping you in your creative flow.",
+      "Unlike traditional banking or crypto apps, The OmniWallet unifies all your finances in one place. From cash to crypto, investments to payments — everything is connected and optimized by AI.",
   },
   {
-    question: "Is there a learning curve?",
+    question: "Is my money secure?",
     answer:
-      "Layers is designed to feel intuitive from day one. Most designers are productive within hours, not weeks. We also provide interactive tutorials and comprehensive documentation to help you get started.",
+      "Absolutely. Security is our top priority. The OmniWallet uses bank-grade encryption, decentralized storage, and multi-factor authentication to keep your assets safe at all times.",
   },
   {
-    question: "How do you handle version control?",
+    question: "Do I need to know about crypto to use it?",
     answer:
-      "Every change in Layers is automatically saved and versioned. You can review history, restore previous versions, and create named versions for important milestones.",
+      "Not at all. The OmniWallet is designed to be intuitive for everyone. You can manage crypto as easily as your bank account — the app handles the complexity in the background.",
   },
   {
-    question: "Can I work offline?",
+    question: "Can I really solve any financial problem?",
     answer:
-      "Yes! Layers includes a robust offline mode. Changes sync automatically when you're back online, so you can keep working anywhere.",
+      "Yes. Whether you need to pay bills, save for goals, rebalance investments, or convert currencies, the Wallet’s AI assistant finds the best solution instantly.",
   },
   {
-    question: "How does Layers handle collaboration?",
+    question: "Does it work worldwide?",
     answer:
-      "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
+      "Yes! The OmniWallet supports multiple currencies and integrates with global banks, exchanges, and payment systems, so you can stay connected wherever you are.",
+  },
+  {
+    question: "How does collaboration work?",
+    answer:
+      "You can share wallets with family, business partners, or teams. Set permissions, track transactions, and manage finances together in real-time.",
   },
 ];
 

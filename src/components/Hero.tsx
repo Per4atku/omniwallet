@@ -14,11 +14,11 @@ const Hero = () => {
         ✨ $7.5M seed round raised
       </Badge>
       <h1 className="text-6xl font-medium lg:text-7xl">
-        Impactful design, created effortlessly
+        One brain for all your money
       </h1>
       <p className="text-muted-foreground text-lg text-center px-2">
-        Design tools shouldn't slow you down. Layers combines powerful features
-        with an intuitive interface that keeps you in your creative flow
+        Manage crypto, cash, investments, and banking in one universal wallet —
+        powered by AI, secured for the future.
       </p>
       <MaxWidthWrapper
         maxWidth={600}

@@ -4,25 +4,25 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState, Fragment } from "react";
 
-import acmecorp from "@/assets/images/acme-corp.svg";
-import apex from "@/assets/images/apex.svg";
-import twice from "@/assets/images/twice.svg";
-import pulse from "@/assets/images/pulse.svg";
-import outside from "@/assets/images/outside.svg";
-import echovalley from "@/assets/images/echo-valley.svg";
-import quantum from "@/assets/images/quantum.svg";
-import celestial from "@/assets/images/celestial.svg";
+import applepay from "@/assets/images/apple-pay.png";
+import binance from "@/assets/images/binance-logo.png";
+import bitstamp from "@/assets/images/bitstamp-logo.png";
+import coinbase from "@/assets/images/coinbase-logo.png";
+import kraken from "@/assets/images/kraken-logo.png";
+import paypal from "@/assets/images/paypal-logo.png";
+import metamask from "@/assets/images/metamask-logo.png";
+import n26 from "@/assets/images/n26-logo.png";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const logos = [
-  { name: "Acme Corp", src: acmecorp },
-  { name: "Apex", src: apex },
-  { name: "Twice", src: twice },
-  { name: "Pulse", src: pulse },
-  { name: "Outside", src: outside },
-  { name: "Echo Valley", src: echovalley },
-  { name: "Quantum", src: quantum },
-  { name: "Celestial", src: celestial },
+  { name: "Apple Pay", src: applepay },
+  { name: "Binance", src: binance },
+  { name: "Bitstamp", src: bitstamp },
+  { name: "Coinbase", src: coinbase },
+  { name: "Kraken", src: kraken },
+  { name: "PayPal", src: paypal },
+  { name: "MetaMask", src: metamask },
+  { name: "N26", src: n26 },
 ];
 
 const LogoTicker = () => {

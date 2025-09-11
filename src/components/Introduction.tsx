@@ -4,11 +4,11 @@
 import { useScroll, useTransform } from "framer-motion";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import SectionBadge from "./SectionBadge";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const text =
-  "You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.";
+  "that never sleeps, never makes mistakes, and knows every opportunity before you do. The ØmniWallet is that brain — your universal guide through the chaos of banks, crypto, and the future of finance.";
 
 const words = text.split(" ");
 const Introduction = () => {
@@ -31,26 +31,29 @@ const Introduction = () => {
         {/* Sticky content */}
         <div className="sticky top-20 flex flex-col items-center justify-start z-10 md:top-48">
           <div className="w-full flex justify-center mb-8">
-            <SectionBadge>INTRODUCING LAYERS</SectionBadge>
+            <SectionBadge>INTRODUCING ØMNIWALLET</SectionBadge>
           </div>
           <MaxWidthWrapper maxWidth={800}>
             <h2 className="text-4xl lg:text-5xl text-center font-medium">
               <span className="text-white">
-                Your creative process deserves better.{" "}
+                Imagine if your money had a brain,
               </span>
+              <br />
               {words.map((word, index) => (
-                <span
-                  key={index}
-                  className={twMerge(
-                    "transition-opacity duration-300",
-                    index < currentWord ? "opacity-100" : "opacity-20"
-                  )}
-                >
-                  {word}{" "}
-                </span>
+                <Fragment key={index}>
+                  {words[index + 1] === "ØmniWallet" && <br />}
+                  <span
+                    className={twMerge(
+                      "transition-opacity duration-300",
+                      index < currentWord ? "opacity-100" : "opacity-20"
+                    )}
+                  >
+                    {word}{" "}
+                  </span>
+                </Fragment>
               ))}
               <span className="text-lime-400 block">
-                That's why we built Layers.
+                One app, endless solutions.
               </span>
             </h2>
           </MaxWidthWrapper>
