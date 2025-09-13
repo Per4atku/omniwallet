@@ -12,7 +12,6 @@ import { AnimatedMenuButton } from "./ui/animated-menu-button";
 
 const navlinks = [
   { name: "Home", href: "#home" },
-  { name: "Features", href: "#features" },
   { name: "Integrations", href: "#intergrations" },
   { name: "FAQ", href: "#faq" },
 ];
@@ -67,7 +66,7 @@ const Navbar = () => {
               {navlinks.map((link) => (
                 <Link
                   onClick={() => toggle(false)}
-                  className="text-2xl border-b-1 border-white"
+                  className="text-2xl  "
                   href={link.href}
                   key={link.href}
                 >
