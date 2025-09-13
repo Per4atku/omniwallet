@@ -34,7 +34,7 @@ const Introduction = () => {
             <SectionBadge>INTRODUCING ØMNIWALLET</SectionBadge>
           </div>
           <MaxWidthWrapper maxWidth={800}>
-            <h2 className="text-4xl lg:text-5xl text-center font-medium">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-medium">
               <span className="text-white">
                 Imagine if your money had a brain,
               </span>
