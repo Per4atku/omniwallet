@@ -8,7 +8,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const text =
-  "that never sleeps, never makes mistakes, and knows every opportunity before you do. The ØmniWallet is that brain — your universal guide through the chaos of banks, crypto, and the future of finance.";
+  "that never sleeps, never errs, and spots opportunities before you do. The ØmniWallet is that brain — your guide through banks, crypto, and the future of finance.";
 
 const words = text.split(" ");
 const Introduction = () => {
